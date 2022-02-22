@@ -8,7 +8,10 @@ function Home() {
           <table id="mainTable">
             <tr>
               <td colSpan="2" >
-                <img src="https://raw.githubusercontent.com/Maholeb20/Html_profile/main/assets/imgs/9.jpg" width="100%"/>
+              <video controls poster="https://raw.githubusercontent.com/Maholeb20/Html_profile/main/assets/imgs/9.jpg" 
+                                src="https://raw.githubusercontent.com/Maholeb20/Html_profile/main/assets/videos/How%20to%20connect%20firebase%20with%20Visual%20code%20studio%20--%20Step%20by%20Step--.mp4" width="100%">
+                </video>
+      
               </td>
             </tr>  
           </table>  

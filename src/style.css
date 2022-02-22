@@ -81,12 +81,14 @@
 }
 
 /* ------------------------------------------ Home ------------------------------------------ */
-img {
+video {
+    width: 100%;
     margin-top: 75px;  
     background-position: center;
     background-size: cover; 
 }
 #mainTable {
+    width: 100%;
     background-color: black;
     background-repeat: no-repeat;
 }
