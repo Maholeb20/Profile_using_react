@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Montserrat:wght@100;300;400;600&family=Zen+Antique+Soft&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+  
+/* ------------------------------------------ header & Navigation Bar ------------------------------------------ */
+.header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.897) !important;
+    padding: 10px 0px;
+}
+.logo {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 50px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right:100px;
+}
+.navbar > ul > li {
+    white-space: nowrap;
+    padding: 10px 0 10px 30px;
+}
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    white-space: nowrap;
+    transition: 0.3s;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+    visibility: visible;
+    width: 100%;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+    color: #fff;
+}
+
+/* ------------------------------------------ Home ------------------------------------------ */
+img {
+    margin-top: 75px;  
+    background-position: center;
+    background-size: cover; 
+}
+#mainTable {
+    background-color: black;
+    background-repeat: no-repeat;
+}
+.container-about{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+#userImage{
+    border-radius: 4px;
+}
+#wrap-about {
+    margin-top: 80px;
+    width: 80vw;
+    height: 80vh;
+    background: white;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#userImage {
+    width: 500px;
+    margin: 16px;
+}
+.bioBox {
+    margin-top: -50px;
+    width: 80%;
+    text-align: left;
+    font-family:  Poppins-Regular;
+}
+.btn {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-size: medium;
+}
+#bioinfo{
+    margin-top: 20px;
+}
+
+
+/* ------------------------------------------ About and Poject ------------------------------------------ */
+#about{
+    background: rgba(1, 85, 100, 0.692);
+}
+.bio{
+    margin-top:100px; 
+    color: white;
+    width: 50%;
+    text-align: left;
+    font-family:  Poppins-Regular;
+}
+.skills{
+    color: white;
+    width: 50%;
+    text-align: left;
+    font-family:  Poppins-Regular;
+    list-style: decimal; 
+    margin-bottom: 10px;
+}
+h2{
+    margin-top: 3%;
+    color: white;
+}
+#projects{
+    margin-left: 25%;
+}
+#card-header2{
+    max-width: 20rem; 
+    margin-top: -100px; 
+    margin-left: 20px;
+}
+.card{
+    color: black;
+    margin-top: 1%;
+    background: white;
+    border: 2px solid rgba(1, 85, 100, 0.692);;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.card-header{
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-text{
+    line-height: 20px;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 900;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+/* ------------------------------------------ Contact form ------------------------------------------ */
+#contact{
+    background: url('https://raw.githubusercontent.com/Maholeb20/Html_profile/main/assets/imgs/overlay-bg.jpg');
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(8, 66, 255, 0.61);;
+    background-size: cover; 
+}
+.contact-form{
+    margin: 0px 0px 0px 30px;
+}
+#contact-form{
+    margin-top: -100px;
+}
+.container-contact{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+#wrap-contact {
+    margin-top: 100px;
+    width: 80vw;
+    height: 120vh;
+    background: white;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.thead #contact-me{
+    margin-left: 30px;
+}
+.thead h1{
+    margin-top: 20px;
+    font-family: Poppins-Regular;
+    font-size: larger;
+    font: 2em sans-serif;
+    font-weight: lighter;
+}
+.contact-form {
+    padding: 20px 0px 0px 10px;
+    margin-top: -100px;
+}
+.form-group{
+    height: 60px;
+    background: #fff;
+    color: #000;
+    font-size: 14px; 
+    line-height: 0.5px;  
+}
+input.input, select, textarea{
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    background: transparent;
+}
+input.input:focus{
+    border: 1px solid rgb(14, 237, 245);
+}
+#select-location{
+    margin-left: 10px;
+}
+select{
+    width: 206px;
+}
+select.input:focus{
+    border: 2px solid rgb(14, 237, 245);
+}
+.wrap-input input{
+    width: 450px;
+}
+.field p{
+    color: red;
+}
+.row{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+}
+textarea.input {
+    font-family: Poppins-Regular;
+    color: #555555;
+    min-height: 130px;
+    max-height: 130px;
+    min-width: 450px;
+    max-width: 450px;
+    padding-top: 14px;
+}
+textarea.input:focus{
+    border: 2px solid rgb(14, 237, 245);
+}
+.error-hint{
+    font-family: 'lato', sans-serif;
+    color: #ff0000;
+    margin-left: 5px;
+}
+.hidden{
+    display: none;
+}
+.contact-form-btn {
+    margin-top: 30px;
+    margin-left: 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #0073f7;
+    border-radius: 25px;
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2; 
+    cursor: pointer; 
+}
+iframe{
+    border:0; 
+    float: left;
+    margin-top: -190px;
+}
+.thank-you{
+    margin-left: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: green;
+}
+.address{
+    position: absolute;
+    bottom: -180px;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------ Footer ------------------------------------------ */
+.footer {
+    border-top: 0.1em solid black;
+    background: #303036;
+    color: #d3d3d3;
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+}
+.footer-bottom {
+    border-top: 0.1em solid black;
+    background: #343a40;
+    font-size: 12px;
+    color: whitesmoke;
+    width: vw;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 4px;
+    font-size: 1em;
+    bottom: 0;
+}
+.footer-content {
+    display: flex;
+    margin-left: 30%;
+    line-height: 30px;
+    padding-top: 5px;
+}
+.footer-content ul a {
+    text-decoration: none;
+    justify-content: space-around;
+    align-self: center;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    list-style: none;   
+}
+#personal{
+    margin-left: 10%;
+}
+.footer-content ul li a:hover {
+    transition: all .3s;
+    text-decoration: underline;
+}
+
